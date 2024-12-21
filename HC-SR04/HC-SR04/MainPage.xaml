@@ -1,0 +1,45 @@
+﻿<Window x:Class="HC_SR04.MainPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HC_SR04"
+        mc:Ignorable="d"
+        Title="Главная страница" Height="600" Width="920">
+    <Grid Background="#FF43484F">
+        <Button Content="Калибровка устройства" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="264" Height="56" FontSize="18" Background="#FF2D3648" Foreground="White" BorderBrush="{x:Null}" FontWeight="Bold" Click="Button_Click_1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="6"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Включение датчика" HorizontalAlignment="Left" Margin="552,98,0,0" VerticalAlignment="Top" Width="225" Height="56" FontSize="18" Background="#FF2D3648" Foreground="White" BorderBrush="{x:Null}" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="6"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="Ультразвуковой датчик измерения расстояния " HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Height="46" Foreground="White" FontSize="25" Width="584" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,66,0,0" VerticalAlignment="Top" Width="920" Fill="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="305" Margin="10,200,0,0" VerticalAlignment="Top" Width="520" Fill="White" RadiusX="10" RadiusY="10"/>
+        <Rectangle HorizontalAlignment="Left" Height="305" Margin="552,200,0,0" VerticalAlignment="Top" Width="358" Fill="White" RadiusX="10" RadiusY="10"/>
+        <Label Content="Список измерений" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top" Height="36" Foreground="White" FontSize="18" Width="177" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        <Label Content="Список предыдущих измерений" HorizontalAlignment="Left" Margin="554,159,0,0" VerticalAlignment="Top" Height="36" Foreground="White" FontSize="18" Width="300" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        <Button x:Name="StartStopButton" Content="Старт/стоп измерения" HorizontalAlignment="Left" Margin="10,518,0,0" VerticalAlignment="Top" Width="264" Height="56" FontSize="18" Background="#FF46A70A" Foreground="White" BorderBrush="White" BorderThickness="2" FontWeight="Bold" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="6"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Сброс измерений" Margin="731,518,12,0" VerticalAlignment="Top" Height="56" FontSize="18" Background="#FF46A70A" Foreground="White" BorderBrush="White" BorderThickness="2" FontWeight="Bold" Click="Button_Click_2">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="6"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
